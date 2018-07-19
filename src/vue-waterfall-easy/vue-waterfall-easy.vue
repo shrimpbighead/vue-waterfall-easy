@@ -234,7 +234,7 @@ export default {
       return this.imgWidth + this.gap
     },
     imgWidth_c() { // 对于移动端重新计算图片宽度`
-      return this.isMobile ? window.innerWidth / 2 - this.mobileGap*2 : this.imgWidth
+      return this.isMobile ? window.innerWidth / 2 - this.mobileGap : this.imgWidth
     },
     hasLoadingSlot() {
       return !!this.$scopedSlots.loading
